@@ -8,4 +8,4 @@ Remaining = (90 - age_int)
 Days = Remaining * 365
 Weeks = Remaining * 52
 Months = Remaining * 12
-print(f"You had {Days} Days, {Weeks} Weeks and {Months} Months in your Life If you Live till 90 Years")
+print(f"You had {Days} Days, {Weeks} Weeks and {Months} Months Left in your Life If you Live till 90 Years")
