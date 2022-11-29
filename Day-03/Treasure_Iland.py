@@ -27,30 +27,102 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
-print("Assume you are at cross roads")
-print('''
- 
-          _.--._
-          \ ** /
-           (<>)
-    .      )  (      .
-    )\_.._/ /\ \_.._/(
-    (*_<>_  _<>_*)
-    )/ '' \ \/ / '' \(
-    '      )  (      '
-           (  ) 
-           )  (
-           (<>)
-          / ** \/
-         /.-..-.\/
-''')
-one = input("Enter which direction you want take?, Left,Right or Stright\n:").lower()
-if one == "left" :
-    print("You are at Tadikonda")
-elif one == "right" :
-    print("You are at Ponnekallu")
-elif one == "stright" :
-    print("You are at Amaravathi")
-    
+First_Turn = input("You are at Cross Rods You Can't go stright Choose Left or Right\n:").lower()
+if First_Turn == "left" :
+    Second_Choice = input("You are at a Lake. Do you want to 'Swim' Or Wait for the 'Boat'? Chose Swim or Boat\n:").lower()
+    if Second_Choice == "boat" :
+        Finale = input("You are at Finale Stage of the Game.Ther are 3 Doors in front of you Chose one.'Red','Blue' or 'Yellow'?\n:").lower()
+        if Finale == "yellow" :
+            print("You entered to Trasure room .You Win.")
+            print('''
+                     __________
+        /\____;;___\.
+       | /         /
+       `. ())oo() .
+        |\(%()*^^()^\.
+       %| |-%-------|
+      % \ | %  ))   |
+      %  \|%________|
+ejm97  %%%%
+            ''')
+        elif Finale == "red" :
+            print("You entered a room full of fire .GameOver")
+            print('''
+            
+               (  .      )
+           )           (              )
+                 .  '   .   '  .  '  .
+        (    , )       (.   )  (   ',    )
+         .' ) ( . )    ,  ( ,     )   ( .
+      ). , ( .   (  ) ( , ')  .' (  ,    )
+     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+ jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+            ''')
+        elif Finale == "blue" :
+            print("You are Eaten by Beasts. GameOver")
+            print('''
+            
+                   (    )
+                  ((((()))
+                  |o\ /o)|
+                  ( (  _')
+                   (._.  /\__
+                  ,\___,/ '  ')
+    '.,_,,       (  .- .   .    )
+     \   \\     ( '        )(    )
+      \   \\    \.  _.__ ____( .  |
+       \  /\\   .(   .'  /\  '.  )
+        \(  \\.-' ( /    \/    \)
+         '  ()) _'.-|/\/\/\/\/\|
+             '\\ .( |\/\/\/\/\/|
+               '((  \    /\    /
+               ((((  '.__\/__.')
+                ((,) /   ((()   )
+                 "..-,  (()("   /
+            pils  _//.   ((() ."
+          _____ //,/" ___ ((( ', ___
+                           ((  )
+                            / /
+                          _/,/'
+                        /,/,"
+            ''')
+        else :
+            print("GameOver")
+    elif Second_Choice == "swim" :
+        print("You are Attacked by Crocodile. Game Over")
+        print('''
+        
+                     _.---._     .---.
+            __...---' .---. `---'-.   `.
+  ~ -~ -.-''__.--' _.'( | )`.  `.  `._ :
+ -.~~ .'__-'_ .--'' ._`---'_.-.  `.   `-`.
+  ~ ~_~-~-~_ ~ -._ -._``---. -.    `-._   `.
+    ~- ~ ~ -_ -~ ~ -.._ _ _ _ ..-_ `.  `-._``--.._
+     ~~-~ ~-_ _~ ~-~ ~ -~ _~~_-~ -._  `-.  -. `-._``--.._.--''. ~ -~_
+         ~~ -~_-~ _~- _~~ _~-_~ ~-_~~ ~-.___    -._  `-.__   `. `. ~ -_~
+       jgs   ~~ _~- ~~- -_~  ~- ~ - _~~- _~~ ~---...__ _    ._ .` `. ~-_~
+                ~ ~- _~~- _-_~ ~-_ ~-~ ~_-~ _~- ~_~-_~  ~--.....--~ -~_ ~
+                     ~ ~ - ~  ~ ~~ - ~~-  ~~- ~-  ~ -~ ~ ~ -~~-  ~- ~-~
+
+
+        ''')
+    else :
+        print("Wrong Option.Game Over")
 else :
-    print("You took WrongTurn You are Dead")
+    print(f"You Fall into a Hole. Game Over!")
+    print('''
+    Digging a hole:
+
+
+
+                             8a .
+                               `.  _
+    ___________  s,    _____     /_/   ____________________a:f____
+               .Jktbc._       _ ./
+              xft#kTJ:   _.  (_)/)  -._
+             cf8#6C. ,  (   ( ,-'      )
+           ` `"P:'.     '-._\_\___.---'
+
+    ''')
